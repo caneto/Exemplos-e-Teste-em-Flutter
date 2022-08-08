@@ -31,7 +31,6 @@ class _MovieAppState extends State<MovieApp> {
               width: double.infinity,
               child: ListView(
                 scrollDirection: Axis.horizontal,
-
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12.0),
@@ -74,7 +73,7 @@ class _MovieAppState extends State<MovieApp> {
                 Padding(
                   padding: const EdgeInsets.only(left: 12.0),
                   child: Text(
-                    "Top Trends",
+                    "Top Filmes",
                     style: TextStyle(
                         color: Colors.orange,
                         fontSize: 26.0,
@@ -94,15 +93,15 @@ class _MovieAppState extends State<MovieApp> {
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("JOKER", "8.5/10","assets/joker.png"),
+                    child: MovieCard("JOKER", "8.5/10","assets/images/joker.jpg"),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("Avengers", "8.5/10","assets/avengers.png"),
+                    child: MovieCard("Avengers", "8.5/10","assets/images/avengers.jpg"),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("Terminator", "8.5/10","assets/terminator.png"),
+                    child: MovieCard("Terminator", "8.5/10","assets/images/terminator.jpg"),
                   ),
                 ],
               ),
@@ -111,12 +110,12 @@ class _MovieAppState extends State<MovieApp> {
             Row(
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(left: 12.0),
+                  padding: EdgeInsets.only(left: 12.0),
                   child: Text(
-                    "Top Trends",
+                    "Recomendado para Você",
                     style: TextStyle(
                         color: Colors.orange,
-                        fontSize: 26.0,
+                        fontSize: 25.0,
                         fontWeight: FontWeight.bold
                     ),
                     textAlign: TextAlign.start,
@@ -133,15 +132,15 @@ class _MovieAppState extends State<MovieApp> {
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("JOKER", "7.5/10","assets/joker.png"),
+                    child: MovieCard("JOKER", "7.5/10","assets/images/joker.jpg"),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("Interstellar", "9.5/10","assets/interstellar.png"),
+                    child: MovieCard("Interstellar", "9.5/10","assets/images/interstellar.jpg"),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:12.0),
-                    child: MovieCard("Terminator", "8.5/10","assets/terminator.png"),
+                    child: MovieCard("Terminator", "8.5/10","assets/images/terminator.jpg"),
                   ),
                   SizedBox(height: 22.0,)
                 ],
@@ -164,7 +163,7 @@ class _MovieAppState extends State<MovieApp> {
           ),
           SizedBox(height: 5.0,),
           Text(movieName,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 26.0
