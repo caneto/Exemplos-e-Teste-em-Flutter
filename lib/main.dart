@@ -3,6 +3,7 @@ import 'package:exemplosdeteste/pages/chat_app.dart';
 import 'package:exemplosdeteste/pages/credit_card.dart';
 import 'package:exemplosdeteste/pages/dash_board.dart';
 import 'package:exemplosdeteste/pages/gallery_app.dart';
+import 'package:exemplosdeteste/pages/home_app.dart';
 import 'package:exemplosdeteste/pages/login_app.dart';
 import 'package:exemplosdeteste/pages/login_page.dart';
 import 'package:exemplosdeteste/pages/movie_app.dart';
@@ -13,6 +14,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+    ),
     //home: LoginPage(),
     //home: TravelApp(),
     //home: ChatApp(),
@@ -20,7 +24,8 @@ void main() {
     //home: QrCode(),
     //home: GalleryApp(),
     //home: Booksapp(),
-    home:MovieApp(),
+    //home:MovieApp(),
+    home: HomeApp(title: 'Teste'),
   ));
 }
 
